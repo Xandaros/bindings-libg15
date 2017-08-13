@@ -82,9 +82,9 @@ module Bindings.G15 where
 
 #num G15_KEY_LIGHT
 
-#ccall initLibG15, IO ()
-#ccall re_initLibG15, IO ()
-#ccall exitLibG15, IO ()
+#ccall initLibG15, IO CInt
+#ccall re_initLibG15, IO CInt
+#ccall exitLibG15, IO CInt
 
 #ccall libg15Debug, CInt -> IO ()
 
